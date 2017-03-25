@@ -1,10 +1,15 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #222;
+  color: #eee;
+  height: 100vh;
+}
 .container {
-  margin: 0 auto;
-  width: 100%;
-  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .row {
   width: 100%;
@@ -12,17 +17,33 @@
 }
 .col {
   display: inline-block;
-  width: 75px;
-  height: 75px;
-  border: 3px solid black;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #222;
+}
+.colorCount {
+  margin: 2px;
 }
 #button {
-  padding: 0 8px 0 8px;
-  background-color: #ddd;
+  margin-top: 8px;
+  padding: 0 11px 0 11px;
+  background: linear-gradient(#8ce, #6ac);
   font-family: 'Ubuntu', sans-serif;
-  border: .7px solid black;
-  border-radius: 5%;
+  border: 1px solid black;
+  border-radius: 6px;
 }
 #button:hover {
-  background-color: #7af;
+  background: linear-gradient(#6ac, #48a);
+}
+.green {
+  color: #3c3;
+}
+.red{
+  color: #d12;
+}
+.blue {
+  color: #22f;
+}
+.yellow {
+  color: #ff4;
 }
